@@ -28,14 +28,15 @@
 </form>
 <p>&nbsp;</p>
 
-<?php
+<p>
+  <?php
 include "koneksi.php" ;
 
 if(isset($_POST["simpan"])) {
 	$nama = $_POST["anggota"] ;
 	$alamat = $_POST["alamat"] ;
 	$ttl = $_POST["ttl"] ;
-	$status = $_POST["status"] ;
+	$status  = $_POST["status"] ;
 	
 $query = mysql_query("INSERT INTO `anggota` (`id_anggota`, `nama_anggota`, `alamat`, `ttl_anggota`, `status_anggota`) VALUES (NULL, '$nama', '$alamat
 ', '$ttl', '$status');") ;
@@ -52,3 +53,35 @@ else
 
 
 ?>
+</p>
+<table width="800" border="1">
+  <tr>
+    <td>Nama Anggota</td>
+    <td>Alamat</td>
+    <td>Tempat , Tanggal Lahir</td>
+    <td>Status</td>
+    <td>Action</td>
+  </tr>
+<?php 
+$query_tampil = mysql_query("SELECT * FROM `anggota` ORDER BY `anggota`.`id_anggota` DESC ") ;
+
+while ( $tampil = mysql_fetch_array($query_tampil)) {
+
+?>
+  
+  <tr>
+    <td><?php echo $tampil["nama_anggota"] ?></td>
+    <td><?php echo $tampil["alamat"] ?></td>
+    <td><?php echo $tampil["ttl_anggota"] ?></td>
+    <td><?php echo $tampil["status_anggota"] ?></td>
+    <td>Edit / Hapus </td>
+  </tr>
+
+<?php 
+}
+?>
+
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

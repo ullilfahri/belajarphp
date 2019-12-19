@@ -74,7 +74,7 @@ while ( $tampil = mysql_fetch_array($query_tampil)) {
     <td><?php echo $tampil["alamat"] ?></td>
     <td><?php echo $tampil["ttl_anggota"] ?></td>
     <td><?php echo $tampil["status_anggota"] ?></td>
-    <td>Edit / Hapus </td>
+    <td><a href="editanggota.php?id=<?php echo $tampil["id_anggota"] ?>">Edit</a> / <a href="hapusanggota.php?id=<?php echo $tampil["id_anggota"] ?>">Hapus</a></td>
   </tr>
 
 <?php 

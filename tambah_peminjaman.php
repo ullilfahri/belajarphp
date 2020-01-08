@@ -1,3 +1,9 @@
+
+<?php
+include "index.php" ;
+
+?>
+
 <h1>Tambah Data Peminjaman</h1>
 <form action="" method="post" enctype="multipart/form-data" name="form1">
   <p>Tanggal Pinjam 

@@ -1,3 +1,9 @@
+<?php
+include "index.php" ;
+
+?>
+
+
 <h1>Tambah Data Buku</h1>
 <form action="" method="post" enctype="multipart/form-data" name="form1">
   <p>Judul Buku 

@@ -1,4 +1,5 @@
-<p>Selamat Datang Di Perpustakaan Sederhana Saya</p>
+<p>Selamat Datang Di Aplikasi Perpustakaan Paling Sederhana</p>
 <p>&nbsp;</p>
-
-<a href="http://localhost/belajarphp/tambah_anggota.php">Anggota </a> / <a href="http://localhost/belajarphp/tambah_buku.php">Buku</a> /  <a href="http://localhost/belajarphp/tambah_peminjaman.php">Peminjaman </a>
+<p><a href="tambah_anggota.php">Anggota </a></p>
+<p><a href="tambah_buku.php">Buku</a></p>
+<p><a href="tambah_peminjaman.php">Peminjaman</a></p>

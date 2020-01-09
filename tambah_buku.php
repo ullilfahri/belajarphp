@@ -74,7 +74,7 @@ while ($tampil = mysql_fetch_array ($query_tampil)) {
         <td><?php echo $tampil["pengarang"] ?></td>
         <td><?php echo $tampil["jenis_buku"] ?></td>
         <td><?php echo $tampil["penerbit"] ?></td>
-        <td>Edit / Hapus</td>
+        <td>Edit / <a href="hapus_buku.php?id=<?php echo $tampil["kode_buku"] ?>">Hapus</a></td>
     </tr>
 <?php
 }

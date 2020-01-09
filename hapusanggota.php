@@ -1,9 +1,11 @@
-<?php
-include "koneksi.php";
+<?php 
+include "koneksi.php" ;
 
-$id=$_GET["id"];
+$id = $_GET["id"] ;
 
-mysql_query("DELETE FROM `perpustakaan`.`anggota` WHERE `anggota`.`id_anggota` = '$id'");
-echo"<script>window.location='tambah_anggota.php'</script>";
+
+mysql_query("DELETE FROM `anggota` WHERE `anggota`.`id_anggota` = $id ") ;
 
 ?>
+
+<script>window.location='tambah_anggota.php'</script>

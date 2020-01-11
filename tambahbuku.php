@@ -1,3 +1,9 @@
+
+<?php
+include "index.php" ;
+
+?>
+
 <p>Tambah Buku Perpustakaan</p>
 <form name="form1" method="post" action="">
   <p>Judul Buku 
